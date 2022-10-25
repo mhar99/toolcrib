@@ -438,10 +438,15 @@ ol {
 	color:#1ac654;
 }
 #a4{
+<<<<<<< HEAD
 	color:#4a4a4a;
 }
 
 
+=======
+	color:#4A4A4A;
+}
+>>>>>>> 95e30d6cf38c7c2fac52eaf5f96c1a6b457c299a
 .header__top__right__auth {
 	display: inline-block;
 }
