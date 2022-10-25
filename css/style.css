@@ -1944,7 +1944,7 @@ ol {
 	border-radius:50px;
 }
 
-.borderless td, .borderless th{
+.borderless td, .borderless th,.borderless tr{
     border: none;
 }
 .borderless th{
@@ -1952,9 +1952,32 @@ ol {
 }
 .borderless td{
 	font-weight:600;
-	padding-top:0;
-	
+	padding-top:0;	
 }
+.borderless2 th{
+	color:#8F8F8F;
+	border:none;
+	font-weight:500;
+}
+.tablestrip{
+	background:#F6F6F6;
+	border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+.tablestrip-active{
+	background:#E4FFED;
+	border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+.tablestrip-disable{
+	background:#FFF3E5;
+	border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+
 
 .card {
 	width: 180px;

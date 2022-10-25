@@ -84,56 +84,198 @@
                         </div>
                     </div>
             </div>
-            <div class="container-xxl ml-4">
-                <div class="col-12 mt-5">
-             <table class="table table-condensed table-striped">
-                <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Tanggal Pengajuan</th>
-                      <th>Kode Pinjam/Tools</th>
-                      <th>Peminjam/Model</th>
-                      <th>Jumlah</th>
-                      <th>Status</th>
-                      <th>Action/Keterangan</th>
-                    </tr>
-                </thead>
+            <div class="container-xxl">
+                <div class="col-12 mt-4">
+                    <table class="table table-condensed">
+                        <thead class="borderless2 font">
+                            <tr>
+                                <th>No</th>
+                                <th>Tanggal Pengajuan</th>
+                                <th>Kode Pinjam/Tools</th>
+                                <th>Peminjam/Model</th>
+                                <th>Jumlah</th>
+                                <th>Status</th>
+                                <th colspan="2">Action/Keterangan</th>
+                            </tr>
+                        </thead>
             
-                <tbody>
-                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                       <td>1</td>
-                        <td>28 Mar 2022</td>
-                        <td>LEN4546OP</td>
-                        <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Zuki</td>
-                        <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label>
-                            4 Tools</td>
-                        <td>Sedang Diproses</td>
-                        <td><a href="#" id="a1"><i class="fa fa-times-circle-o mr-1" aria-hidden="true"></i>Batalkan</a></td>
-                        <td><span class="arrow_carrot-down"></span><br></td>
-                    </tr>
-                        
-                    <tr>
-                        <td colspan="12" class="hiddenRow">
-                        <div class="accordian-body collapse" id="demo1"> 
-                          <table class="table text-left" id="data">
-                                  <tbody>
-                                    <tr class="info">
-                                          <td colspan="2">1</td>
-                                          <td>Obeng Plus </td>	
-                                          <td>Tekiro A395</td>	
-                                          <td>4 pcs</td>	
-                                          <td colspan="3">Diproses</td>	
+                        <tbody>
+                            <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle tablestrip" style="cursor:pointer;">
+                                <td>1</td>
+                                <td>28 Mar 2022</td>
+                                <td>LEN4546OP</td>
+                                <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Mark Zuki</td>
+                                <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label> 4 Tools</td>
+                                <td>Sedang Diproses</td>
+                                <td><a href="#" id="a1"><i class="fa fa-times-circle-o mr-1" aria-hidden="true"></i>Batalkan</a></td>
+                                <td><span class="arrow_carrot-down"></span><br></td>
+                            </tr>
+                                    <!--Coolapsed-->
+                                    <tr id="demo1" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">1</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
                                     </tr>
-                                  </tbody>	
-                               </table>
-                          
-                          </div> 
-                      </td>
-                    </tr>
-            </table>
-                        </div>
-                    
-                      </div> 
+                                    <tr id="demo1" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">2</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
+                                    </tr>
+                                    <tr id="demo1" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">3</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
+                                    </tr>
+                                    <!--End Collapse-->
+                            <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle tablestrip" style="cursor:pointer;">
+                                <td>2</td>
+                                <td>28 Mar 2022</td>
+                                <td>LEN4546OP</td>
+                                <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Mark Zuki</td>
+                                <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label> 4 Tools</td>
+                                <td>Sedang Diproses</td>
+                                <td><a href="#" id="a1"><i class="fa fa-times-circle-o mr-1" aria-hidden="true"></i>Batalkan</a></td>
+                                <td><span class="arrow_carrot-down"></span><br></td>
+                            </tr>
+                                    <!--Coolapsed-->
+                                    <tr id="demo2" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">1</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
+                                    </tr>
+                                    <tr id="demo2" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">2</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
+                                    </tr>
+                                    <tr id="demo2" class="hiddenRow accordian-body collapse"> 
+                                        <td class="text-center" colspan="2">3</td>
+                                        <td class="text-left">Obeng Plus </td>	
+                                        <td class="text-left">Tekiro A395</td>	
+                                        <td class="text-left">4 pcs</td>	
+                                        <td class="text-left" colspan="3">Diproses</td>	
+                                    </tr>
+                                    <!--End Collapse-->
+                                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle tablestrip-active" style="cursor:pointer;">
+                                        <td>3</td>
+                                        <td>28 Mar 2022</td>
+                                        <td>LEN4546OP</td>
+                                        <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Mark Zuki</td>
+                                        <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label> 4 Tools</td>
+                                        <td>Meminjam</td>
+                                        <td></td>
+                                        <td><span class="arrow_carrot-down"></span><br></td>
+                                    </tr>
+                                            <!--Coolapsed-->
+                                            <tr id="demo3" class="hiddenRow accordian-body collapse"> 
+                                                <td class="text-center" colspan="2">1</td>
+                                                <td class="text-left">Obeng Plus </td>	
+                                                <td class="text-left">Tekiro A395</td>	
+                                                <td class="text-left">4 pcs</td>	
+                                                <td class="text-left">2 pcs disetujui</td>	
+                                                <td class="text-left" colspan="2">Stok tersisa 2 pcs</td>
+                                            </tr>
+
+                                            <tr id="demo3" class="hiddenRow accordian-body collapse"> 
+                                                <td class="text-center" colspan="2">3</td>
+                                                <td class="text-left">Obeng Plus </td>	
+                                                <td class="text-left">Tekiro A395</td>	
+                                                <td class="text-left">2 pcs</td>	
+                                                <td class="text-left">0 pcs disetujui</td>	
+                                                <td class="text-left" colspan="2">Stok Habis</td>
+                                            </tr>
+                                            <tr id="demo3" class="hiddenRow accordian-body collapse"> 
+                                                <td class="text-center" colspan="2">2</td>
+                                                <td class="text-left">Obeng Plus </td>	
+                                                <td class="text-left">Tekiro A395</td>	
+                                                <td class="text-left">1 pcs</td>	
+                                                <td class="text-left" colspan="3">1 pcs disetujui</td>	
+                                            </tr>
+                                            <!--End Collapse-->
+                                            <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle tablestrip-disable" style="cursor:pointer;">
+                                                <td>4</td>
+                                                <td>28 Mar 2022</td>
+                                                <td>LEN4546OP</td>
+                                                <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Mark Zuki</td>
+                                                <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label> 4 Tools</td>
+                                                <td>Kembali</td>
+                                                <td>Pada : 4 April 2022</td>
+                                                <td><span class="arrow_carrot-down"></span><br></td>
+                                            </tr>
+                                                    <!--Coolapsed-->
+                                                    <tr id="demo4" class="hiddenRow accordian-body collapse"> 
+                                                        <td class="text-center" colspan="2">1</td>
+                                                        <td class="text-left">Obeng Plus </td>	
+                                                        <td class="text-left">Tekiro A395</td>	
+                                                        <td class="text-left">4 pcs</td>	
+                                                        <td class="text-left">2 pcs disetujui</td>	
+                                                        <td class="text-left" colspan="2">Stok tersisa 2 pcs</td>
+                                                    </tr>
+        
+                                                    <tr id="demo4" class="hiddenRow accordian-body collapse"> 
+                                                        <td class="text-center" colspan="2">3</td>
+                                                        <td class="text-left">Obeng Plus </td>	
+                                                        <td class="text-left">Tekiro A395</td>	
+                                                        <td class="text-left">2 pcs</td>	
+                                                        <td class="text-left">0 pcs disetujui</td>	
+                                                        <td class="text-left" colspan="2">Stok Habis</td>
+                                                    </tr>
+                                                    <tr id="demo4" class="hiddenRow accordian-body collapse"> 
+                                                        <td class="text-center" colspan="2">2</td>
+                                                        <td class="text-left">Obeng Plus </td>	
+                                                        <td class="text-left">Tekiro A395</td>	
+                                                        <td class="text-left">1 pcs</td>	
+                                                        <td class="text-left" colspan="3">1 pcs disetujui</td>	
+                                                    </tr>
+                                                    <!--End Collapse-->
+
+                                                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle tablestrip" style="cursor:pointer;">
+                                                        <td>5</td>
+                                                        <td>28 Mar 2022</td>
+                                                        <td>LEN4546OP</td>
+                                                        <td><label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-user-o text-white text-center" aria-hidden="true"></i></label> Mark Zuki</td>
+                                                        <td> <label class="bg-success rounded-circle px-2 py-1"><i class="fa fa-wrench fa-1x text-white" aria-hidden="true"></i></label> 4 Tools</td>
+                                                        <td>Sedang Diproses</td>
+                                                        <td><a href="#" id="a1"><i class="fa fa-times-circle-o mr-1" aria-hidden="true"></i>Batalkan</a></td>
+                                                        <td><span class="arrow_carrot-down"></span><br></td>
+                                                    </tr>
+                                                            <!--Coolapsed-->
+                                                            <tr id="demo5" class="hiddenRow accordian-body collapse"> 
+                                                                <td class="text-center" colspan="2">1</td>
+                                                                <td class="text-left">Obeng Plus </td>	
+                                                                <td class="text-left">Tekiro A395</td>	
+                                                                <td class="text-left">4 pcs</td>	
+                                                                <td class="text-left" colspan="3">Diproses</td>	
+                                                            </tr>
+                                                            <tr id="demo5" class="hiddenRow accordian-body collapse"> 
+                                                                <td class="text-center" colspan="2">2</td>
+                                                                <td class="text-left">Obeng Plus </td>	
+                                                                <td class="text-left">Tekiro A395</td>	
+                                                                <td class="text-left">4 pcs</td>	
+                                                                <td class="text-left" colspan="3">Diproses</td>	
+                                                            </tr>
+                                                            <tr id="demo5" class="hiddenRow accordian-body collapse"> 
+                                                                <td class="text-center" colspan="2">3</td>
+                                                                <td class="text-left">Obeng Plus </td>	
+                                                                <td class="text-left">Tekiro A395</td>	
+                                                                <td class="text-left">4 pcs</td>	
+                                                                <td class="text-left" colspan="3">Diproses</td>	
+                                                            </tr>
+                                                            <!--End Collapse-->
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
                 
     <nav aria-label="Page navigation ">
         <ul class="pagination justify-content-center mt-5">
