@@ -25,6 +25,7 @@
       <!-- DataTables -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" type="css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css.css" type="css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -86,55 +87,32 @@
             </div>
             <div class="container-xxl ml-4">
                 <div class="col-12 mt-5">
-             <table class="table table-condensed table-striped"  border="1">
-                <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Tanggal Pengajuan</th>
-                      <th>Kode Pinjam/Tools</th>
-                      <th>Peminjam/Model</th>
-                      <th>Jumlah</th>
-                      <th>Status</th>
-                      <th>Action/Keterangan</th>
-                    </tr>
-                </thead>
-            
-                <tbody>
-                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                       <td>1</td>
-                        <td>28 Mar 2022</td>
-                        <td>LEN4546OP</td>
-                        <td>Mark Zuki</td>
-                        <td><i class="fa fa-wrench" aria-hidden="true"></i>4 Tools</td>
-                        <td>Sedang Diproses</td>
-                        <td><a href="#" id="a1"><i class="fa fa-times-circle-o mr-1" aria-hidden="true"></i>Batalkan</a></td>
-                        <td><span class="arrow_carrot-down"></span><br></td>
-                    </tr>
-                        
-                    <tr>
-                        <td colspan="12" class="hiddenRow">
-                        <div class="accordian-body collapse" id="demo1"> 
-                          <table class="table text-left" border="1" id="data">
-                                  <tbody>
-                                    <tr class="info">
-                                          <td colspan="2">1</td>
-                                          <td>Obeng Plus </td>	
-                                          <td>Tekiro A395</td>	
-                                          <td>4 pcs</td>	
-                                          <td colspan="3">Diproses</td>	
-                                    </tr>
-                                  </tbody>	
-                               </table>
-                          
-                          </div> 
-                      </td>
-                    </tr>
-            </table>
+                    <table id="example" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Salary</th>
+                            </tr>
+                            <td></td>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                    </table>
                         </div>
                     
                       </div> 
                 
-    <nav aria-label="Page navigation ">
+    <!-- <nav aria-label="Page navigation ">
         <ul class="pagination justify-content-center mt-5">
             <a class="page-link-2" href="#" tabindex="-1">Prev</a>
           <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -146,7 +124,7 @@
             <a class="page-link-2" href="#">Next</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
 
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
@@ -161,9 +139,65 @@
         <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
         <script>
-            $(document).ready(function () {
-                $('#data').DataTable();
-            });
+           /* Formatting function for row details - modify as you need */
+function format(d) {
+    // `d` is the original data object for the row
+    return (
+        '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+        '<tr>' +
+        '<td>Full name:</td>' +
+        '<td>' +
+        d.name +
+        '</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Extension number:</td>' +
+        '<td>' +
+        d.extn +
+        '</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Extra info:</td>' +
+        '<td>And any further details here (images etc)...</td>' +
+        '</tr>' +
+        '</table>'
+    );
+}
+ 
+$(document).ready(function () {
+    var table = $('#example').DataTable({
+        ajax: 'objects.txt',
+        columns: [
+            {
+                className: 'dt-control',
+                orderable: false,
+                data: null,
+                defaultContent: '',
+            },
+            { data: 'name' },
+            { data: 'position' },
+            { data: 'office' },
+            { data: 'salary' },
+        ],
+        order: [[1, 'asc']],
+    });
+ 
+    // Add event listener for opening and closing details
+    $('#example tbody').on('click', 'td.dt-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row(tr);
+ 
+        if (row.child.isShown()) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        } else {
+            // Open this row
+            row.child(format(row.data())).show();
+            tr.addClass('shown');
+        }
+    });
+});
         </script>
 
 
