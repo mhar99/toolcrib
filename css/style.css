@@ -1753,8 +1753,8 @@ ol {
 }
 
 .product__details__pic__item img {
-	width: 224px;
-	height: 266.39px;
+	width: 424px;
+	height: 400.39px;
 }
 
 .product__details__pic__slider img {
@@ -1763,7 +1763,7 @@ ol {
 }
 
 .product__details__pic__slider.owl-carousel .owl-item img {
-	width: 400px;
+	width: 600px;
 }
 
 .product__details__text h3 {
