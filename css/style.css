@@ -124,6 +124,11 @@ tr.header{
     text-align: center;
 }
 
+.content-header {
+	margin-left:100px;
+	margin-top: 20px;
+}
+
 ul,
 ol {
 	padding: 0;
@@ -293,6 +298,12 @@ ol {
 	display: block;
 	font-size: 14px;
 	color: #1c1c1c;
+}
+
+.header__top__left a:hover{
+	display: block;
+	font-size: 14px;
+	color: #1AC654;
 }
 
 .header__top__left ul li:after {
@@ -1739,8 +1750,8 @@ ol {
 -----------------------*/
 
 .product-details {
-	padding-top: 80px;
-	margin-left: 8%;
+	padding-top: 40px;
+	margin-left: 170px;
 }
 
 .product-details-profile {
@@ -1753,8 +1764,17 @@ ol {
 }
 
 .product__details__pic__item img {
-	width: 424px;
-	height: 400.39px;
+	width: 400px;
+	height: 400px;
+}
+
+.image-user {
+	margin-bottom: 20px;
+}
+
+.image-user img {
+	width: 224px;
+	height: 266.39px;
 }
 
 .product__details__pic__slider img {
@@ -1905,7 +1925,7 @@ ol {
 	border-radius: 7px;
 	color: #1AC654;
 	margin-left: 25%;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .btn-ubh{
@@ -1916,7 +1936,7 @@ ol {
 	border-radius: 7px;
 	color: #ffff;
 	margin-left: 1%;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .btn-btl{
@@ -3214,6 +3234,10 @@ ol {
 	height: 635px;
 	margin-left: 75px;
     }
+
+.main-content{
+	margin-left: 70px;
+}
 
 .main-btn {
     background:#1AC654;
