@@ -1114,6 +1114,7 @@ ol {
 .from-blog {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	position: fixed;
 }
 
 .from-blog .blog__item {
