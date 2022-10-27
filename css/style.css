@@ -438,15 +438,9 @@ ol {
 	color:#1ac654;
 }
 #a4{
-<<<<<<< HEAD
 	color:#4a4a4a;
 }
 
-
-=======
-	color:#4A4A4A;
-}
->>>>>>> 95e30d6cf38c7c2fac52eaf5f96c1a6b457c299a
 .header__top__right__auth {
 	display: inline-block;
 }
@@ -476,7 +470,7 @@ ol {
 .header__menu ul li {
 	list-style: none;
 	display: inline-block;
-	margin-right: 45px;
+	margin-right: 30px;
 	position: relative;
 }
 
@@ -510,12 +504,15 @@ ol {
 	text-transform: capitalize;
 	color: #ffffff;
 	font-weight: 400;
-	padding: 5px 15px;
+	padding: 2px 15px;
 }
 
 .header__menu ul li.active a {
-	color: #1ac654;
-	font-weight: 700;
+	background: #DDFDE8;
+	border: 2px solid #1AC654;
+	border-radius: 6px;
+	color: #1AC654;
+	padding:5px;
 }
 
 .header__menu ul li:hover .header__menu__dropdown {
@@ -525,8 +522,11 @@ ol {
 }
 
 .header__menu ul li:hover>a {
-	color: #1ac654;
-	font-weight: 700;
+	background: #DDFDE8;
+	border: 2px solid #1AC654;
+	border-radius: 6px;
+	color: #1AC654;
+	padding:5px;
 }
 
 .header__menu ul li:last-child {
@@ -543,8 +543,8 @@ ol {
 	-ms-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
-	padding: 5px 0;
-	display: block;
+	padding: 0 0 0 0;
+	display: inline;
 }
 
 .header_topright_language {
@@ -1931,9 +1931,9 @@ ol {
 
 .pos{
 	background: #ffffff;
-	position: absolute;
+	position: relative;
 	left: 15px ;
-	bottom: 15px;
+	top: 100px;
 	border-radius:50px;
 	box-shadow:1px 1px 1px 1px #E5E5E5;
 }
@@ -1943,8 +1943,8 @@ ol {
 .pos2{
 	background: #ffffff;
 	position: absolute;
-	right: 20px ;
-	bottom: 25px;
+	right: 40px ;
+	bottom: 80px;
 }
 
 .pos3{
@@ -1988,6 +1988,23 @@ ol {
 }
 
 
+.cardlist {
+	width: 160px;
+	height: 160px;
+	background: #F6F6F6;
+	border-radius: 12px;
+	border: none;
+}
+.cardlist:hover{
+	border:2px solid #1AC654;
+}
+
+.cardlist-cover{
+	width: 250px;
+	height: 120px;
+	background: #1AC654;
+	border: none;
+}
 .card {
 	width: 180px;
 	height: 180px;
