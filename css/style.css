@@ -2284,7 +2284,7 @@ ol {
 .shoping__cart__table table tbody tr td.shoping__cart__price {
 	font-weight: 700;
 	height: 100px;
-	width: 200px;
+	width: 250px;
 	text-align: left;
 }
 
@@ -3252,9 +3252,9 @@ ol {
     background-repeat: no-repeat;
     background-position: right center;
     /* background-size: auto; */
-	width: 608px;
+	width: 750px;
 	height: 635px;
-	margin-left: 75px;
+	margin-left: 95px;
     }
 
 .main-content{
