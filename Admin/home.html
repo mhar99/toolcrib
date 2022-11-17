@@ -7,20 +7,20 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Admin | Home</title>
 
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -29,24 +29,26 @@
     
     <div class="container">
         <nav class="navbar navbar-light bg-white pb-5 mb-5">
- 
                 <div class="container justify-content-end">
-                    <button type="button" class="btn btn-outline-success rounded-circle"><i class="fa fa-bell-o mx-auto my-auto"></i>
-                        <span class="position-absolute top-100 start-100 translate-middle p-2 bg-success rounded-circle">
-                        </span>
-                    </button>
-                    <button class="btn btn-success rounded-circle ml-4 mr-2"><i class="fa fa-user"></i></button>
+                    <div class="notif">
+                        <button type="button" class="btn btn-success rounded-circle badge-notif" data-badge="3"><i class="fa fa-bell-o mx-auto my-auto"></i>
+                        </button>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-reddit fa-2x text-success mr-2"></i>You're got Notification</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-success rounded-circle ml-2 mr-2"><i class="fa fa-user"></i></button>
                         <div class="header__top__right__language">
                             <div style="font-size: 16px;"><strong>Fatah</strong></div> 
                             <span class="arrow_carrot-down"></span><br>
                             <div style="color: #b3b3b3">Admin</div>
                             <ul>
-                                <li><a href="#"><i class="fa fa-user"></i>  Profile</a></li>
+                                <li><a href="#"><i class="fa fa-user text-success"></i>  Profile</a></li>
+                                <hr>
                                 <li><a id="a1" href="#"><i class="fa fa-sign-out"></i>  Logout</a></li>
                             </ul>
                         </div>
-
-                    </div>
+                </div>
             </nav>
     </div>
 
@@ -67,7 +69,10 @@
                     <div class="blog__item">
                         <div class="blog__item__pic text-center">
                             <a href="daftar-tools.html"><button class="card">
-                                <i class="fa fa-wrench fa-4x mx-auto my-auto"></i>
+                                <span class="fa-stack fa-2x mx-auto my-auto">
+                                    <i class="fa fa-wrench fa-stack-2x text-success fa-flip-horizontal"></i>
+                                    <i class="fa fa-wrench fa-stack-2x text-black"></i>
+                                </span>
                             </button></a>
                             <h5 class="font font-16px mt-2"><strong>Tools</strong></h5>
                         </div>
@@ -87,7 +92,10 @@
                     <div class="blog__item">
                         <div class="blog__item__pic text-center">
                             <a href=""><button class="card">
-                                <i class="fa fa-user fa-4x mx-auto my-auto"></i>
+                                <span class="fa-stack fa-2x mx-auto my-auto">
+                                    <i class="fa fa-file-o fa-stack-2x text-success"></i>
+                                    <i class="fa fa-user fa-stack-1x text-black"></i>
+                                </span>
                             </button></a>
                             <h5 class="font font-16px mt-2"><strong>User</strong></h5>
                         </div>

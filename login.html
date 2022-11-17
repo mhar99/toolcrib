@@ -18,18 +18,17 @@
   <body>
         <div class="container">
           <div class="row">
-            <div class="col-auto text-black">
-              <div class="d-flex align-items-center h-custom-3 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-                <form style="width: 23rem;">
-      
-                  <h3 id="login" class="fw-bold mb-5 pb-4" style="letter-spacing: 1px;">Log <span style="color: #1AC654;">In</span> </h3>
-      
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form2Example18" class="form-control form-control-lg" placeholder="Username"/>
+            <div class="col-6 text-black mt-5">
+              <div class="d-flex align-items-center mt-5">
+                <form>
+                  <h3 id="login" class="fw-bold mb-5" style="letter-spacing: 1px;">Log <span style="color: #1AC654;">In</span> </h3>
+                  <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="username" name="username">
                   </div>
-      
-                  <div class="form-outline mb-2">
-                    <input type="password" id="form2Example28" class="form-control form-control-lg" placeholder="Password" />
+                  <div class="input-container mb-5">
+                    <i class="fa fa-lock icon"></i>
+                    <input class="input-field" type="password" placeholder="password" name="password">
                   </div>
 
                   <div class="form-check mb-4 mt-3">
@@ -47,12 +46,14 @@
                   <p>Belum Punya Akun? <a href="#!" class="link-info">Registrasi</a></p>
       
                 </form>
-      
               </div>
             </div>
-            <div class="col px-0 d-none d-sm-block">
-              <img class="bg-image-vertical" src="assets/img/login-img.PNG"
-                alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+            <div class="col login-box">
+                <img src="assets/img/login.png" alt="">
+                <h6>Len - MC</h6>
+                <h5>
+                  tool<span style="color:#1AC654">crib</span>
+                </h5>
             </div>
           </div>
         </div>

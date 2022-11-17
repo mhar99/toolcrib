@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin | Ubah Tools</title>
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+</head>
+
+<body>
+   
+    <!-- Header Section Begin -->
+    <div class="container">
+        <nav class="navbar navbar-light bg-white">
+            <div class="col-lg-4">
+                <div class="header__top__left">
+                    <ul>
+                        <li><a href="daftar-tools.html"><i class="fa fa-chevron-left"></i> Daftar Tools</a></li>
+                        <li><a href="home.html" class="font font-a mr-5"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="container justify-content-end">
+                    <div class="notif">
+                        <button type="button" class="btn btn-success rounded-circle badge-notif" data-badge="3"><i class="fa fa-bell-o mx-auto my-auto"></i>
+                        </button>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-reddit fa-2x text-success mr-2"></i>You're got Notification</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-success rounded-circle ml-2 mr-2"><i class="fa fa-user"></i></button>
+                        <div class="header__top__right__language">
+                            <div style="font-size: 16px;"><strong>Fatah</strong></div> 
+                            <span class="arrow_carrot-down"></span><br>
+                            <div style="color: #b3b3b3">Admin</div>
+                            <ul>
+                                <li><a href="user-profile.html"><i class="fa fa-user text-success"></i>  Profile</a></li>
+                                <hr>
+                                <li><a id="a1" href="../login.html"><i class="fa fa-sign-out"></i>  Logout</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <h3 class="font-bold mb-5">Ubah <span style="color:#1AC654;">Tools</span></h3>
+
+            <div class="row">
+                <div class="col-5">
+                    <h6>Foto Barang</h6>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="imgUp">
+                                <button type="button" class="imagePreview" style="cursor:default;">
+                                    <input type="file" class="uploadFile img btn-up" value="Upload Photo">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="imgUp">
+                                <button type="button" class="imagePreview" style="cursor:default;">
+                                    
+                                    <input type="file" class="uploadFile img btn-up" value="Upload Photo">
+                                    
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="imgUp">
+                                <button type="button" class="imagePreview" style="cursor:default;">
+    
+                                    <input type="file" class="uploadFile img btn-up" value="Upload Photo">
+                                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" id="a4"><u>set tumbnail</u></a>
+                </div>
+                <div class="col-3 pl-5">
+                    <div class="row">
+                        <h6>Jenis*</h6>
+                        <select class="form1">
+                            <option value="">Baru</option>
+                            <option value="">Lama</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <h6>Nama Tools*</h6>
+                        <input type="text" class="form1" value="Obeng Plus">
+                    </div>
+                    <div class="row">
+                        <h6>Model*</h6>
+                        <input type="text" class="form1" value="Tekiro A395">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h6>Deskripsi*</h6>
+                    <input type="text" name="" id="" class="form2" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-9">
+                    <h3 class="font-bold">stok</h3>
+                </div>
+                <div class="col">
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#tambah">
+                        <i class="fa fa-plus-square-o"></i> Tambah</button>
+                </div>
+            </div>
+            <table class="table-detail-tools">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Tools</th>
+                        <th>Model</th>
+                        <th>Kode Stok</th>
+                        <th>Status</th>
+                        <th>Keterangan</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Kondisi Baik</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tersedia</td>
+                        <td>Rusak, perlu perbaikan</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr class="table-disable">
+                        <td>9</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tidak Tersedia</td>
+                        <td>Dipinjam</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                    <tr class="table-disable">
+                        <td>10</td>
+                        <td>Obeng Plus</td>
+                        <td>Tekiro A395</td>
+                        <td>LA12345</td>
+                        <td>Tidak Tersedia</td>
+                        <td>Rusak, perlu perbaikan</td>
+                        <td><a href="" id="a4" data-toggle="modal" data-target="#ubah">
+                            <u>ubah</u></a></td>
+                        <td><a href="" data-toggle="modal" data-target="#hapusstok"><i class="fa fa-trash text-danger"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row mt-5">
+                <div class="col-8"></div>
+                <div class="col">
+                    <button class="btn btn-outline-success px-3"><i class="fa fa-times-circle-o"></i> Batal</button>
+                    <button class="btn btn-success px-2 ml-3"><i class="fa fa-save"></i> Simpan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade modaltambah" id="tambah" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header mt-3" style="display: block;">
+                <h4>Tambah <span style="color: #1AC654;">Stok</span></h4>
+                <p>Tools: Obeng plus Tekiro A395</p>
+            </div>
+            <div class="modal-body">
+
+                <p>Kode Stok*</p>
+                <input type="text" placeholder="Masukkan Kode Stok" class="form1" style="width:100%;">
+
+                <p class="mt-3">Status*</p>
+                <input type="radio" name="status" id="tersedia">
+                <label for="tersedia">Tersedia</label>
+                <input type="radio" name="status" id="tidaktersedia">
+                <label for="tidaktersedia">Tidak Tersedia</label>
+                
+                <p class="mt-3">Keterangan</p>
+                <input type="text" placeholder="Tambahkan Keterangan" class="form1" style="width:100%;">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-btl" data-dismiss="modal"><i class="fa fa-times-circle-o" style="color:#1AC654; margin-right: 5px;" aria-hidden="true">
+                </i>Batal</button>
+              <button type="button" class="btn-ap"> <a href="#" id="a2">
+                <i class="fa fa-save" aria-hidden="true">
+                </i>  Simpan</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade modaltambah" id="ubah" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header mt-3" style="display: block;">
+                <h4>Ubah <span style="color: #1AC654;">Stok</span></h4>
+                <p>Tools: Obeng plus Tekiro A395</p>
+            </div>
+            <div class="modal-body">
+
+                <p>Kode Stok*</p>
+                <input type="text" value="LA1234" placeholder="Masukkan Kode Stok" class="form1" style="width:100%;">
+
+                <p class="mt-3">Status*</p>
+                <input type="radio" name="status" id="tersedia" checked>
+                <label for="tersedia">Tersedia</label>
+                <input type="radio" name="status" id="tidaktersedia">
+                <label for="tidaktersedia">Tidak Tersedia</label>
+                
+                <p class="mt-3">Keterangan</p>
+                <input type="text" value="Kondisi Baik" placeholder="Tambahkan Keterangan" class="form1" style="width:100%;">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-btl" data-dismiss="modal"><i class="fa fa-times-circle-o" style="color:#1AC654; margin-right: 5px;" aria-hidden="true">
+                </i>Batal</button>
+              <button type="button" class="btn-ap"> <a href="#" id="a2">
+                <i class="fa fa-save" aria-hidden="true">
+                </i>  Simpan</a>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade modaltambah text-center" id="hapusstok" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="mt-5 text-center">
+                <h4 class="font-bold">
+                    Konfirmasi <span style="color: #1AC654;">Hapus Stok</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p style="font-weight:500">Apakah anda yakin menghapus stok tools<strong>Obeng Plus Model Tekiro A395</strong> dengan kode <strong>LA12345</strong> ?</p>
+            </div>
+            <div class="text-center mb-5">
+              <button type="button" class="btn-ap"><a href="" id="a2"><i class="fa fa-trash" aria-hidden="true">
+                </i>  Hapus</a></button>
+              <button type="button" class="btn-btl"  data-dismiss="modal">
+                <i class="fa fa-times-circle-o" aria-hidden="true">
+                </i>  Batal</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Js Plugins -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.js"></script>
+    <script src="../assets/js/mixitup.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
