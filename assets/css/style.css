@@ -2190,14 +2190,14 @@ ol {
 	background: #1AC654;
 	border: none;
 }
-.card {
+.big-menu-card {
 	width: 180px;
 	height: 180px;
 	background: #F6F6F6;
 	border-radius: 12px;
 	border: none;
 }
-.card:hover{
+.big-menu-card:hover{
 	border:2px solid #1AC654;
 }
 
@@ -2274,9 +2274,7 @@ ol {
 	border-radius: 6px;
 	text-align: center;
 }
-.btn-f{
-	border-radius: 6px;
-}
+
 .input-o{
 	background:none;
 	border:none;
